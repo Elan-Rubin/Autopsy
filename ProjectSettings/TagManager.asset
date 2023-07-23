@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Bone
+    uniqueID: 3762683157
+    locked: 0
+  - name: Muscle
+    uniqueID: 1193337291
+    locked: 0
+  - name: Skin
+    uniqueID: 2355371203
+    locked: 0
