@@ -47,6 +47,9 @@ TagManager:
   - name: Muscle
     uniqueID: 1193337291
     locked: 0
+  - name: Underskin
+    uniqueID: 547575311
+    locked: 0
   - name: Skin
     uniqueID: 2355371203
     locked: 0

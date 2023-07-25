@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 24e08411e889c304399a7c550d6575c8
+guid: 5bba8d03cc4c4974596fcdddcdaa7e1d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,253 +110,253 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 1head
+      name: splats_export_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1000
-        width: 200
-        height: 500
+        y: 133
+        width: 56
+        height: 67
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f62c3fd4036707b49bde3d78aec7d25e
-      internalID: -1348131940
+      spriteID: d43d18b1a4a321b4bb923a162f3baf1e
+      internalID: 898616894
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1chest
+      name: splats_export_1
       rect:
         serializedVersion: 2
-        x: 200
-        y: 1000
-        width: 200
-        height: 500
+        x: 56
+        y: 133
+        width: 44
+        height: 67
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a7f94684768e3443bd892050ff594d4
-      internalID: 1768529155
+      spriteID: 225e116bd9e96fc4cb3f6a79d10cf460
+      internalID: 1486556294
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1larm
+      name: splats_export_2
       rect:
         serializedVersion: 2
-        x: 400
-        y: 1000
-        width: 200
-        height: 500
+        x: 100
+        y: 133.33334
+        width: 50
+        height: 66.666664
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ac1584189cb44040aeb26cde7b174e1
-      internalID: -658529089
+      spriteID: ec7e5c67564bf8e4fa7ad952d422afef
+      internalID: 435605685
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1lhand
+      name: splats_export_3
       rect:
         serializedVersion: 2
-        x: 600
-        y: 1000
-        width: 200
-        height: 500
+        x: 150
+        y: 133.33334
+        width: 50
+        height: 66.666664
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 326c9a16daefbc14b96d7249eabda89f
-      internalID: 2025448971
+      spriteID: 3a382c5c0e567634db49ea56a59108aa
+      internalID: -339877804
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1rarm
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 500
-        width: 200
-        height: 500
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 89a647c31983af34f8e8a9b3f0dfd4b8
-      internalID: 1588835165
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1rhand
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 500
-        width: 200
-        height: 500
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f94a313681d2bd34599b5cd8b73defb6
-      internalID: -461372375
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1lthigh
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 500
-        width: 200
-        height: 500
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 40f6e3e63ca6f0140ae3cbb2069dcd15
-      internalID: -1152165809
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1lcalf
-      rect:
-        serializedVersion: 2
-        x: 600
-        y: 500
-        width: 200
-        height: 500
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2504288b3f09df94a91695a4080a235e
-      internalID: -758842733
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1lfoot
+      name: splats_export_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 200
-        height: 500
+        y: 67
+        width: 58
+        height: 67
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae0444a39d98bb84a92d53f21a9ad068
-      internalID: 10140288
+      spriteID: c3776ca524c9ab247b826b98799884ed
+      internalID: -172310182
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1rthigh
+      name: splats_export_5
       rect:
         serializedVersion: 2
-        x: 200
-        y: 0
-        width: 200
-        height: 500
+        x: 60
+        y: 67
+        width: 44
+        height: 71
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3c73f428ad35384f9e3dfd9220c6818
-      internalID: 1813604166
+      spriteID: 3773b67602e3ee249be167ce4505708c
+      internalID: 33262302
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1rcalf
+      name: splats_export_6
       rect:
         serializedVersion: 2
-        x: 397
-        y: 0
-        width: 200
-        height: 500
+        x: 109
+        y: 67
+        width: 41
+        height: 75
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2d57cee9f9c4d0498a207efa6d47731
-      internalID: 1067546703
+      spriteID: 4640cefa4be99134a95cd21a54da8004
+      internalID: -1624924873
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1rfoot
+      name: splats_export_7
       rect:
         serializedVersion: 2
-        x: 600
-        y: 0
-        width: 200
-        height: 500
+        x: 150
+        y: 67
+        width: 50
+        height: 79
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b2abac413d7504408831d47b5ef1645
-      internalID: -247876824
+      spriteID: b527a6a4bd8aaa34bb3d61a7c5c21e57
+      internalID: -1551131681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splats_export_8
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 10
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e3d7ab424ebf6343b683f53fb9e4afa
+      internalID: -1441581642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splats_export_9
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 5
+        width: 41
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 456487fdcc324e54ba0f343610e3bf12
+      internalID: 1700860646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splats_export_10
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 10
+        width: 41
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970f7a8cba5b99a49849b261d5bd2bfa
+      internalID: 100417518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: splats_export_11
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 11
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f328dc1852ed61478b954b2aa953570
+      internalID: 585255902
       vertices: []
       indices: 
       edges: []
@@ -372,18 +372,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      1chest: 1768529155
-      1head: -1348131940
-      1larm: -658529089
-      1lcalf: -758842733
-      1lfoot: 10140288
-      1lhand: 2025448971
-      1lthigh: -1152165809
-      1rarm: 1588835165
-      1rcalf: 1067546703
-      1rfoot: -247876824
-      1rhand: -461372375
-      1rthigh: 1813604166
+      splats_export_0: 898616894
+      splats_export_1: 1486556294
+      splats_export_10: 100417518
+      splats_export_11: 585255902
+      splats_export_2: 435605685
+      splats_export_3: -339877804
+      splats_export_4: -172310182
+      splats_export_5: 33262302
+      splats_export_6: -1624924873
+      splats_export_7: -1551131681
+      splats_export_8: -1441581642
+      splats_export_9: 1700860646
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
