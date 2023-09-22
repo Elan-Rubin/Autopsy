@@ -56,7 +56,7 @@ TagManager:
   - name: HeadSkin
     uniqueID: 179794973
     locked: 0
-  - name: HeadOverSkin
+  - name: HeadOverskin
     uniqueID: 1011104001
     locked: 0
   - name: ChestUnderbone

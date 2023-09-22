@@ -27,6 +27,7 @@ public class AutopsyManager : MonoBehaviour
     public void Bite(BodyPartType type, GameObject go)
     {
         var newBite = Instantiate(bitePrefab, Camera.main.ScreenToWorldPoint(Input.mousePosition), Quaternion.identity).transform;
+        newBite.name = $"{type}Bite{BodyManager.Instance.GetBodyPart(type).BiteCounter}";
         newBite.position = new Vector3(newBite.position.x, newBite.position.y, 0);
         newBite.parent = go.transform;
         var sm1 = newBite.GetComponent<SpriteMask>();
@@ -41,6 +42,11 @@ public class AutopsyManager : MonoBehaviour
         sm3.frontSortingLayerID = SortingLayer.NameToID(type+"Underskin");
         sm3.backSortingLayerID = SortingLayer.NameToID(type+"Muscle");
 
+    }
+
+    public void ResetEverything()
+    {
+        BodyManager.Instance.ResetBody();
     }
 }
 public enum BodyPartType

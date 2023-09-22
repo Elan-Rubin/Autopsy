@@ -5,20 +5,26 @@ using UnityEngine;
 public class BodyPart : MonoBehaviour
 {
     [SerializeField] private BodyPartType type;
+    public BodyPartType Type { get { return type; } }
     [SerializeField] private bool reversed;
+    [SerializeField] private bool still;
     bool selected;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private int speed = 200;
     private Camera cam;
+    private int biteCounter;
+    public int BiteCounter { get { return biteCounter; } }
 
     void Start()
     {
         cam = Camera.main;
         rb = GetComponent<Rigidbody2D>();
+        BodyManager.Instance.BodyParts.Add(this);
     }
 
     void Update()
     {
+        if (still) return;
         if (selected)
         {
             Vector3 playerPos = (Vector3)cam.ScreenToWorldPoint(Input.mousePosition);
@@ -39,6 +45,7 @@ public class BodyPart : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             AutopsyManager.Instance.Bite(type, gameObject);
+            biteCounter++;
         }
     }
 }
