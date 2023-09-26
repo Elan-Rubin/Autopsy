@@ -45,6 +45,7 @@ public class BodyPart : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             AutopsyManager.Instance.Bite(type, gameObject);
+            AutopsyManager.Instance.PlaceBlood((Vector3)cam.ScreenToWorldPoint(Input.mousePosition));
             biteCounter++;
         }
     }

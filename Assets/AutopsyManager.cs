@@ -13,7 +13,7 @@ public class AutopsyManager : MonoBehaviour
         else
             instance = this;
     }
-    [SerializeField] private GameObject bitePrefab, cutPrefab;
+    [SerializeField] private GameObject bitePrefab, cutPrefab, bloodPreab;
     void Start()
     {
         
@@ -47,6 +47,11 @@ public class AutopsyManager : MonoBehaviour
     public void ResetEverything()
     {
         BodyManager.Instance.ResetBody();
+    }
+
+    public void PlaceBlood(Vector2 position)
+    {
+        Instantiate(bloodPreab, position, Quaternion.identity);
     }
 }
 public enum BodyPartType
