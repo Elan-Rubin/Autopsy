@@ -6,6 +6,7 @@ public class AutopsyManager : MonoBehaviour
 {
     private static AutopsyManager instance;
     public static AutopsyManager Instance { get { return instance; } }
+    public bool LimbSelected;
     private void Awake()
     {
         if (instance != null && instance != this)

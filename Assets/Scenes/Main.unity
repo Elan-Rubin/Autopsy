@@ -1593,6 +1593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8349f77060934c74eb4a8cf9b7ddff48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LimbSelected: 0
   bitePrefab: {fileID: 1781520810696867253, guid: 353ee6d2682fcf64b860108c8d9bd52b, type: 3}
   cutPrefab: {fileID: 843012311173822951, guid: 42d2652c9da7ccc4db31d06543ced93d, type: 3}
   bloodPreab: {fileID: 4442107508448666438, guid: fa84af7056a40d7419ec938a4703788d, type: 3}
@@ -2103,6 +2104,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2177,13 +2179,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: -10}
+  m_LocalPosition: {x: 0, y: 2.58, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01d690bcac1b827498de98518db80c60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bottomLeft: {x: -3.5, y: -3.5}
+  topRight: {x: 3.5, y: 3.5}
 --- !u!1 &523262169
 GameObject:
   m_ObjectHideFlags: 0

@@ -33,7 +33,12 @@ public class BodyPart : MonoBehaviour
             if(reversed) rotationZ = -rotationZ;
             rb.MoveRotation(Mathf.LerpAngle(rb.rotation, rotationZ, speed * Time.deltaTime));
 
-            if(Input.GetKeyUp(KeyCode.Mouse0)) selected = false;
+            if (Input.GetKeyUp(KeyCode.Mouse0))
+            {
+                selected = false;
+                AutopsyManager.Instance.LimbSelected = selected;
+
+            }
         }
     }
     private void OnMouseOver()
@@ -41,9 +46,13 @@ public class BodyPart : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             selected = true;
+            AutopsyManager.Instance.LimbSelected = selected;
+            CameraManager.Instance.HitCamera();
+
         }
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
+            if (!AutopsyManager.Instance.LimbSelected) return;
             AutopsyManager.Instance.Bite(type, gameObject);
             AutopsyManager.Instance.PlaceBlood((Vector3)cam.ScreenToWorldPoint(Input.mousePosition));
             biteCounter++;
