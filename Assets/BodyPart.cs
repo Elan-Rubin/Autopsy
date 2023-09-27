@@ -47,7 +47,7 @@ public class BodyPart : MonoBehaviour
         {
             selected = true;
             AutopsyManager.Instance.LimbSelected = selected;
-            CameraManager.Instance.HitCamera();
+            //CameraManager.Instance.HitCamera();
 
         }
         if (Input.GetKeyDown(KeyCode.Mouse1))

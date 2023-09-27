@@ -1595,7 +1595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LimbSelected: 0
   bitePrefab: {fileID: 1781520810696867253, guid: 353ee6d2682fcf64b860108c8d9bd52b, type: 3}
-  cutPrefab: {fileID: 843012311173822951, guid: 42d2652c9da7ccc4db31d06543ced93d, type: 3}
+  cutPrefab: {fileID: 1976133110628321684, guid: 42d2652c9da7ccc4db31d06543ced93d, type: 3}
   bloodPreab: {fileID: 4442107508448666438, guid: fa84af7056a40d7419ec938a4703788d, type: 3}
 --- !u!1 &432557330
 GameObject:
@@ -5976,8 +5976,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.001255, y: 0}
-  m_SizeDelta: {x: 506.8, y: 201.74}
+  m_AnchoredPosition: {x: 0, y: 70.10403}
+  m_SizeDelta: {x: 1247.54, y: 201.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1248592092
 MonoBehaviour:
@@ -5999,7 +5999,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d4e61bfac58d1714bb1839bad37526f4, type: 2}
   m_sharedMaterial: {fileID: 5956963124184775227, guid: d4e61bfac58d1714bb1839bad37526f4, type: 2}
@@ -6034,7 +6034,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -13734,7 +13734,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1999454210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13816,8 +13816,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.08, y: 1.87}
-  m_SizeDelta: {x: 506.793, y: 1083.3071}
+  m_AnchoredPosition: {x: 0.0043, y: 5.7603}
+  m_SizeDelta: {x: 1746.876, y: 341.9481}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2009595375
 GameObject:
