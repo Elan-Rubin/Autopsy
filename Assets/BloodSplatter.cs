@@ -6,16 +6,14 @@ using static UnityEngine.ParticleSystem;
 
 public class BloodSplatter : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
         ExtendBlood();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void ExtendBlood() => StartCoroutine(nameof(ExtendBloodCoroutine));

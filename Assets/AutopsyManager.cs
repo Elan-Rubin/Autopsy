@@ -17,12 +17,12 @@ public class AutopsyManager : MonoBehaviour
     [SerializeField] private GameObject bitePrefab, cutPrefab, bloodPreab;
     void Start()
     {
-        
+
     }
 
     void Update()
     {
-        
+
     }
 
     public void Bite(BodyPartType type, GameObject go)
@@ -37,11 +37,11 @@ public class AutopsyManager : MonoBehaviour
 
         var index = (int)type;
         sm1.frontSortingLayerID = SortingLayer.NameToID(type + "Overskin");
-        sm1.backSortingLayerID = SortingLayer.NameToID(type+"Skin");
-        sm2.frontSortingLayerID = SortingLayer.NameToID(type+"Skin");
-        sm2.backSortingLayerID = SortingLayer.NameToID(type+"Underskin");
-        sm3.frontSortingLayerID = SortingLayer.NameToID(type+"Underskin");
-        sm3.backSortingLayerID = SortingLayer.NameToID(type+"Muscle");
+        sm1.backSortingLayerID = SortingLayer.NameToID(type + "Skin");
+        sm2.frontSortingLayerID = SortingLayer.NameToID(type + "Skin");
+        sm2.backSortingLayerID = SortingLayer.NameToID(type + "Underskin");
+        sm3.frontSortingLayerID = SortingLayer.NameToID(type + "Underskin");
+        sm3.backSortingLayerID = SortingLayer.NameToID(type + "Muscle");
 
     }
 

@@ -30,7 +30,7 @@ public class BodyPart : MonoBehaviour
             Vector3 playerPos = (Vector3)cam.ScreenToWorldPoint(Input.mousePosition);
             Vector3 difference = playerPos - transform.position;
             float rotationZ = Mathf.Atan2(difference.x, -difference.y) * Mathf.Rad2Deg;
-            if(reversed) rotationZ = -rotationZ;
+            if (reversed) rotationZ = -rotationZ;
             rb.MoveRotation(Mathf.LerpAngle(rb.rotation, rotationZ, speed * Time.deltaTime));
 
             if (Input.GetKeyUp(KeyCode.Mouse0))

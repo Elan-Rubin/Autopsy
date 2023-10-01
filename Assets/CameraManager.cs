@@ -54,7 +54,7 @@ public class CameraManager : MonoBehaviour
         //System.Numerics.Vector2 t = VectorConvert(targetPos);
         //System.Numerics.Vector2.Clamp(t, VectorConvert(bottomLeft), VectorConvert(topRight));
         //targetPos = VectorConver2(t);
-        Debug.Log((Vector2.Distance(targetPos, startPos)));
+        //Debug.Log((Vector2.Distance(targetPos, startPos)));
         currentPos = UnityEngine.Vector2.Lerp(transform.position, targetPos, Time.deltaTime * 1f * posMultiplier);
         transform.position = new UnityEngine.Vector3(currentPos.x, currentPos.y, -10);
     }

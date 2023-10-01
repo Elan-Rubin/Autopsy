@@ -18,6 +18,6 @@ public class Cut : MonoBehaviour
 
     void Update()
     {
-        
+
     }
 }
