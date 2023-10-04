@@ -7,6 +7,10 @@ public class AutopsyManager : MonoBehaviour
     private static AutopsyManager instance;
     public static AutopsyManager Instance { get { return instance; } }
     public bool LimbSelected;
+    [SerializeField] private List<GameObject> cameras;
+    private GameObject activeCamera;
+    public GameObject ActiveCamera { get { return activeCamera; } }
+    [SerializeField] private GameObject transition;
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -53,6 +57,13 @@ public class AutopsyManager : MonoBehaviour
     public void PlaceBlood(Vector2 position)
     {
         Instantiate(bloodPreab, position, Quaternion.identity);
+    }
+
+    public void SwitchToNotes() => SwitchCamera(1);
+    public void SwitchToTable() => SwitchCamera(0);
+    public void SwitchCamera(int camera)
+    {
+
     }
 }
 public enum BodyPartType
