@@ -11,6 +11,7 @@ public class WritingManager : MonoBehaviour
     private string textContent = "";
     [SerializeField] private GameObject hand;
     private Vector2 handCpos, handTpos;
+    [SerializeField] private Vector2 startPos, endPos; 
     private int index;
 
     private static WritingManager instance;
@@ -24,8 +25,10 @@ public class WritingManager : MonoBehaviour
     }
     void Start()
     {
+        startPos += (Vector2)transform.position;
+        endPos += (Vector2)transform.position;
         handCpos = handTpos = hand.transform.position;
-        DoText("one two three four five");
+        DoText("notes taken by the player will show up on this notepad.");
     }
 
     void Update()
@@ -37,6 +40,9 @@ public class WritingManager : MonoBehaviour
 
     private IEnumerator DoTextCoroutine(string content)
     {
+        handCpos = hand.transform.position = endPos;
+        handTpos = startPos;
+        while (Vector2.Distance(handCpos, handTpos) > 0.1f) yield return null;
         text.text = textContent = "";
         while (index < content.Length)
         {
@@ -49,14 +55,16 @@ public class WritingManager : MonoBehaviour
             Vector3 bottomRight = charInfo.bottomRight;
             Debug.Log(bottomRight);
             hand.transform.position = bottomRight;*/
-            if (newchar != ' ') handTpos = GetPositionOfLastLetterAsGameObject(text).transform.position + Vector3.right * 0.5f;
-            else yield return new WaitForSeconds(0.2f);
+            if (newchar != ' ') handTpos = (Vector3)GetPositionOfLastLetterAsGameObject(text) + Vector3.right * 0.5f;
+            else yield return new WaitForSeconds(0.1f);
             yield return new WaitForSeconds(0.1f);
             index++;
         }
+        yield return new WaitForSeconds(0.5f);
+        handTpos = endPos;
     }
 
-    public GameObject GetPositionOfLastLetterAsGameObject(TextMeshProUGUI tmp_text)
+    public Vector2 GetPositionOfLastLetterAsGameObject(TextMeshProUGUI tmp_text)
     {
 
         tmp_text.ForceMeshUpdate();
@@ -68,9 +76,9 @@ public class WritingManager : MonoBehaviour
         Vector2 charMidTopLine = new Vector2((vertices[vertexIndex + 0].x + vertices[vertexIndex + 2].x) / 2, (charInfo.bottomLeft.y + charInfo.topLeft.y) / 2);
         Vector3 worldPos = tmp_text.transform.TransformPoint(charMidTopLine);
 
-        GameObject charPositionGameObj = new GameObject("PositionOfLastChar");
+        GameObject charPositionGameObj = new("PositionOfLastChar");
         charPositionGameObj.transform.position = worldPos;
-
-        return charPositionGameObj;
+        Destroy(charPositionGameObj, 0.1f);
+        return charPositionGameObj.transform.position;
     }
 }
