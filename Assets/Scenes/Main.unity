@@ -2003,6 +2003,7 @@ GameObject:
   m_Component:
   - component: {fileID: 418255226}
   - component: {fileID: 418255227}
+  - component: {fileID: 418255228}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2046,6 +2047,24 @@ MonoBehaviour:
   bitePrefab: {fileID: 1781520810696867253, guid: 353ee6d2682fcf64b860108c8d9bd52b, type: 3}
   cutPrefab: {fileID: 1976133110628321684, guid: 42d2652c9da7ccc4db31d06543ced93d, type: 3}
   bloodPreab: {fileID: 4442107508448666438, guid: fa84af7056a40d7419ec938a4703788d, type: 3}
+--- !u!114 &418255228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418255224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32138501693c6be4997534f3f7de6bab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeMultiplier: 1
+  soundEffects:
+  - SoundName: 
+    Clips: []
+    Volume: 0
+    Vary: 0
 --- !u!1 &422484033
 GameObject:
   m_ObjectHideFlags: 0
@@ -7173,7 +7192,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: font goes here
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eff730f22935b2b46bdb1e2d962fac2d, type: 2}
   m_sharedMaterial: {fileID: 3833536733248775898, guid: eff730f22935b2b46bdb1e2d962fac2d, type: 2}
